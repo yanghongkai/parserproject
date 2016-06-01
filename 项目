@@ -1,0 +1,35 @@
+<Lattice Sent="我们大大家" ColNum="5">
+<Column Name="我" NextNum="4" Next="(1 0) (2 0) (3 0) (4 0) ">
+<Unit Name="" POS="" DynInfo="" ColNo="0" UnitNo="0" From="0" To="0" Tree="" Type="_INIT" RuleName="-1" />
+<Unit Name="我" POS="" DynInfo="" ColNo="0" UnitNo="1" From="0" To="0" Tree="" Type="_ADD" RuleName="-1" />
+</Column>
+<Column Name="们" NextNum="4" Next="(2 0) (3 0) (4 0) (2 1) ">
+<Unit Name="们" POS="" DynInfo="" ColNo="1" UnitNo="0" From="1" To="1" Tree="" Type="_INIT" RuleName="-1" />
+<Unit Name="我们" POS="" DynInfo="" ColNo="1" UnitNo="1" From="0" To="1" Tree="" Type="_DICT" RuleName="-1" />
+</Column>
+<Column Name="大" NextNum="4" Next="(3 0) (4 0) (3 1) (4 1) ">
+<Unit Name="大" POS="" DynInfo="" ColNo="2" UnitNo="0" From="2" To="2" Tree="" Type="_INIT" RuleName="-1" />
+<Unit Name="大" POS="" DynInfo="" ColNo="2" UnitNo="1" From="2" To="2" Tree="" Type="_ADD" RuleName="-1" />
+</Column>
+<Column Name="大" NextNum="1" Next="(4 0) ">
+<Unit Name="大" POS="" DynInfo="" ColNo="3" UnitNo="0" From="3" To="3" Tree="" Type="_INIT" RuleName="-1" />
+<Unit Name="大" POS="" DynInfo="" ColNo="3" UnitNo="1" From="3" To="3" Tree="" Type="_ADD" RuleName="-1" />
+</Column>
+<Column Name="家" NextNum="0" Next="">
+<Unit Name="家" POS="" DynInfo="" ColNo="4" UnitNo="0" From="4" To="4" Tree="" Type="_INIT" RuleName="-1" />
+<Unit Name="大家" POS="" DynInfo="" ColNo="4" UnitNo="1" From="3" To="4" Tree="" Type="_DICT" RuleName="-1" />
+<Unit Name="我们大大家" POS="NP" DynInfo=" D=A" ColNo="5" UnitNo="2" From="0" To="5" Tree="W:1[W:0/D:Tag]" Type="_MERGE" RuleName="-1" />
+<Unit Name="我们大大家" POS="NP" DynInfo=" D=A" ColNo="5" UnitNo="3" From="0" To="5" Tree="W:1[W:0/D:Tag]" Type="_MERGE" RuleName="-1" />
+<Unit Name="我们大大家" POS="NP" DynInfo=" D=A" ColNo="5" UnitNo="4" From="0" To="5" Tree="W:1[W:0/D:Tag]" Type="_MERGE" RuleName="-1" />
+<Unit Name="我们大大家" POS="NP" DynInfo=" D=A" ColNo="5" UnitNo="5" From="0" To="5" Tree="W:1[W:0/D:Tag]" Type="_MERGE" RuleName="-1" />
+</Column>
+</Lattice>
+
+
+
+
+http://localhost:8080/getfunc
+http://localhost:8080/jparse?input=我们大大家&operation=合成词^语块
+http://localhost:8080/idxdict?input=filename
+filename=path/Name
+http://localhost:8080/idxrule?input=
